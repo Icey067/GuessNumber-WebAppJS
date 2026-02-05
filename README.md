@@ -4,16 +4,16 @@ A fun and interactive number-guessing game built with Vanilla JavaScript. Test y
 
 ## 🚀 Features
 
-- **Real-time Feedback:** Get instant hints whether your guess is "Too high" or "Too low".
+- **Granular Feedback:** Get specific hints like "Way too high!" or "A bit too low!" based on how close you are to the secret number.
 - **Score System:** Start with 20 points and try to keep it as high as possible.
 - **Highscore Tracking:** Compete against yourself and save your best performance.
-- **Dynamic UI:** Experience seamless background color changes and UI updates when you win.
+- **Dynamic UI:** Experience seamless unique visual feedback with glowing texts, 3D buttons, and refined retro aesthetics.
 - **Game Reset:** Quickly restart the game with the "Again!" button without losing your highscore.
 
 ## 🛠️ Technologies Used
 
 - **HTML5:** Semantic structure for the game interface.
-- **CSS3:** Modern styling with a focus on dark mode aesthetics and responsiveness.
+- **CSS3:** Refined retro styling with CSS variables, radial gradients, text shadows, and interactive 3D button states.
 - **JavaScript (ES6):** Game logic, DOM manipulation, and event handling.
 
 ## 📖 How to Play
