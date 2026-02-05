@@ -27,7 +27,19 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
+      const difference = Math.abs(guess - secretNumber);
+      let message;
+
+      if (guess > secretNumber) {
+        if (difference > 5) message = '📈 Way too high!';
+        else if (difference <= 2) message = '📈 A bit too high!';
+        else message = '📈 Too high!';
+      } else {
+        if (difference > 5) message = '📉 Way too low!';
+        else if (difference <= 2) message = '📉 A bit too low!';
+        else message = '📉 Too low!';
+      }
+      displayMessage(message);
       score--;
       document.querySelector('.score').textContent = score;
     } else {
